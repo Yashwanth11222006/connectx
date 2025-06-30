@@ -6,8 +6,38 @@ const Footer = () => {
   const socialLinks = [
     { icon: Linkedin, href: "#", label: "Connect on LinkedIn" },
     { icon: Instagram, href: "#", label: "Follow our journey" },
-    { icon: Mail, href: "mailto:hello@connectx2025.com", label: "Email us" }
+    { icon: Mail, href: "mailto:guidebazaar2@gmail.com", label: "Email us" }
   ];
+
+  // Newsletter form state and handler
+  const [email, setEmail] = React.useState("");
+  const [status, setStatus] = React.useState("");
+
+  // Replace with your backend endpoint or email service API
+  const handleSubscribe = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setStatus("");
+    if (!email) {
+      setStatus("Please enter a valid email address.");
+      return;
+    }
+    try {
+      // Example: Replace with your real API endpoint
+      const response = await fetch("https://formspree.io/f/xwkgyyqg", {
+        method: "POST",
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email })
+      });
+      if (response.ok) {
+        setStatus("Thank you for subscribing! You'll receive daily updates.");
+        setEmail("");
+      } else {
+        setStatus("Subscription failed. Please try again later.");
+      }
+    } catch (err) {
+      setStatus("An error occurred. Please try again later.");
+    }
+  };
 
   return (
     <footer className="relative overflow-hidden bg-gradient-to-br from-dark via-gray-900 to-dark">
@@ -95,26 +125,32 @@ const Footer = () => {
             transition={{ delay: 0.4, duration: 0.8 }}
             className="backdrop-blur-lg bg-white/5 border border-white/10 rounded-xl sm:rounded-2xl p-6 sm:p-8 mb-8 sm:mb-12"
           >
-            <div className="text-center">
-              <h4 className="text-lg sm:text-xl font-bold text-white mb-2">Stay in the Loop</h4>
-              <p className="text-gray-300 mb-4 sm:mb-6 text-sm sm:text-base">Get updates on speakers, agenda changes, and exclusive networking opportunities</p>
+            <form onSubmit={handleSubscribe}>
+              <div className="text-center">
+                <h4 className="text-lg sm:text-xl font-bold text-white mb-2">Stay in the Loop</h4>
+                <p className="text-gray-300 mb-4 sm:mb-6 text-sm sm:text-base">Get updates on speakers, agenda changes, and exclusive networking opportunities</p>
 
-              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 max-w-md mx-auto">
-                <input
-                  type="email"
-                  placeholder="your@email.com"
-                  className="flex-1 px-3 sm:px-4 py-2 sm:py-3 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-white placeholder-gray-400 focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all duration-300 text-sm sm:text-base"
-                />
-                <motion.button
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="px-4 sm:px-6 py-2 sm:py-3 bg-gradient-to-r from-primary to-secondary text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-2 text-sm sm:text-base"
-                >
-                  <span>Subscribe</span>
-                  <Send className="w-3 h-3 sm:w-4 sm:h-4" />
-                </motion.button>
+                <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 max-w-md mx-auto">
+                  <input
+                    type="email"
+                    value={email}
+                    onChange={e => setEmail(e.target.value)}
+                    placeholder="your@email.com"
+                    className="flex-1 px-3 sm:px-4 py-2 sm:py-3 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-white placeholder-gray-400 focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all duration-300 text-sm sm:text-base"
+                  />
+                  <motion.button
+                    type="submit"
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="px-4 sm:px-6 py-2 sm:py-3 bg-gradient-to-r from-primary to-secondary text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-2 text-sm sm:text-base"
+                  >
+                    <span>Subscribe</span>
+                    <Send className="w-3 h-3 sm:w-4 sm:h-4" />
+                  </motion.button>
+                </div>
+                {status && <div className="mt-3 text-sm text-primary">{status}</div>}
               </div>
-            </div>
+            </form>
           </motion.div>
 
           {/* Bottom section */}

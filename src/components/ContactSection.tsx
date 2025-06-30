@@ -117,19 +117,29 @@ const ContactSection = () => {
               <div className="space-y-3 sm:space-y-4">
                 <motion.a
                   whileHover={{ scale: 1.02, x: 5 }}
-                  href="mailto:hello@connectx2025.com"
+                  href="mailto:guidebazaar2@gmail.com"
                   className="flex items-center space-x-3 text-gray-600 hover:text-primary transition-colors duration-300 text-sm sm:text-base"
                 >
                   <Mail className="w-4 h-4 sm:w-5 sm:h-5" />
-                  <span>hello@connectx2025.com</span>
+                  <span>guidebazaar2@gmail.com</span>
                 </motion.a>
                 <motion.a
                   whileHover={{ scale: 1.02, x: 5 }}
-                  href="tel:+1234567890"
+                  href="tel:7780754541"
                   className="flex items-center space-x-3 text-gray-600 hover:text-secondary transition-colors duration-300 text-sm sm:text-base"
                 >
                   <Phone className="w-4 h-4 sm:w-5 sm:h-5" />
-                  <span>+1 (234) 567-8900</span>
+                  <span>7780754541</span>
+                </motion.a>
+                <motion.a
+                  whileHover={{ scale: 1.02, x: 5 }}
+                  href="https://wa.me/917780754541?text=Hi%20ConnectX%20Team%2C%20I%20need%20some%20help!"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center space-x-3 text-gray-600 hover:text-green-600 transition-colors duration-300 text-sm sm:text-base"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" className="w-4 h-4 sm:w-5 sm:h-5"><path d="M20.52 3.48A11.87 11.87 0 0 0 12 0C5.37 0 0 5.37 0 12c0 2.11.55 4.16 1.6 5.97L0 24l6.22-1.63A11.93 11.93 0 0 0 12 24c6.63 0 12-5.37 12-12 0-3.19-1.24-6.19-3.48-8.52zM12 22c-1.77 0-3.5-.46-5.01-1.33l-.36-.21-3.69.97.99-3.59-.23-.37A9.94 9.94 0 0 1 2 12c0-5.52 4.48-10 10-10s10 4.48 10 10-4.48 10-10 10zm5.2-7.6c-.28-.14-1.65-.81-1.9-.9-.25-.09-.43-.14-.61.14-.18.28-.7.9-.86 1.08-.16.18-.32.2-.6.07-.28-.14-1.18-.44-2.25-1.4-.83-.74-1.39-1.65-1.55-1.93-.16-.28-.02-.43.12-.57.13-.13.28-.34.42-.51.14-.17.18-.29.28-.48.09-.19.05-.36-.02-.5-.07-.14-.61-1.47-.84-2.01-.22-.53-.45-.46-.62-.47-.16-.01-.36-.01-.56-.01-.19 0-.5.07-.76.34-.26.26-1 1-.99 2.43.01 1.43 1.03 2.81 1.18 3 .15.19 2.03 3.1 4.93 4.23.69.3 1.23.48 1.65.61.69.22 1.32.19 1.82.12.56-.08 1.65-.67 1.88-1.32.23-.65.23-1.2.16-1.32-.07-.12-.25-.19-.53-.33z" /></svg>
+                  <span>WhatsApp Instant Help</span>
                 </motion.a>
               </div>
             </div>
@@ -145,11 +155,11 @@ const ContactSection = () => {
             <div className="backdrop-blur-lg bg-white/60 border border-white/40 rounded-xl sm:rounded-2xl p-6 sm:p-8 shadow-xl">
               <div className="flex items-center space-x-3 sm:space-x-4 mb-6">
                 <motion.div
-                  animate={{ 
+                  animate={{
                     scale: [1, 1.1, 1],
                     rotate: [0, 5, -5, 0]
                   }}
-                  transition={{ 
+                  transition={{
                     duration: 2,
                     repeat: Infinity,
                     repeatType: 'reverse'
@@ -162,7 +172,7 @@ const ContactSection = () => {
                   <p className="text-gray-600 text-sm sm:text-base">Get quick answers to your questions</p>
                 </div>
               </div>
-              
+
               <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
                 <div className="grid md:grid-cols-2 gap-3 sm:gap-4">
                   <motion.div
@@ -181,7 +191,7 @@ const ContactSection = () => {
                       placeholder="Your full name"
                     />
                   </motion.div>
-                  
+
                   <motion.div
                     whileFocus={{ scale: 1.02 }}
                   >
