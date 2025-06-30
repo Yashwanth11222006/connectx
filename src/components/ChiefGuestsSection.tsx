@@ -10,8 +10,8 @@ const ChiefGuestsSection = () => {
       name: "Daisuke Tanji",
       title: "Founder & CEO",
       company: "Indobox Inc.",
-      image: "public/assets/daisuke tanji.jpeg?auto=compress&cs=tinysrgb&w=400",
-      background: "public/assets/daisuke tanji.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "/assets/daisuke tanji.jpeg?auto=compress&cs=tinysrgb&w=400",
+      background: "/assets/daisuke tanji.jpeg?auto=compress&cs=tinysrgb&w=800",
       quote: "Building bridges between India and Japan through innovation and entrepreneurship. The future belongs to those who dare to connect cultures and create global solutions.",
       achievements: [
         { icon: Building, text: "Director, Indobox India", color: "text-blue-400" },

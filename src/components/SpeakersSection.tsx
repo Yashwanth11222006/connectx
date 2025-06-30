@@ -86,8 +86,8 @@ const SpeakersSection = () => {
       name: "Harshith Sai Tunuguntla",
       title: "Influencer",
       company: "",
-      image: "public/assets/harshith.jpeg?auto=compress&cs=tinysrgb&w=400",
-      background: "public/assets/harshith.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "/assets/harshith.jpeg?auto=compress&cs=tinysrgb&w=400",
+      background: "/assets/harshith.jpeg?auto=compress&cs=tinysrgb&w=800",
       quote: "Building secure financial systems isn't just about code-it's about trust, impact, and empowering the next generation to shape the digital economy.",
       achievements: [
         { icon: Code, text: "Backend Developer Specializing in Fintech Solutions, UPI Ecosystem", color: "text-blue-400" },
