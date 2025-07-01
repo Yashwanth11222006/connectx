@@ -42,6 +42,7 @@ const PartnersScrollSection = () => {
     { name: "Nirvaha", logo: "/assets/nirvaha.jpg?auto=compress&cs=tinysrgb&w=100" },
     { name: "Build-Ish", logo: "/assets/bluish.jpg?auto=compress&cs=tinysrgb&w=100" },
     { name: "Kalki Labs", logo: "/assets/kalki_labs_logo.jpeg?auto=compress&cs=tinysrgb&w=100" },
+    { name: "S-Hatch", logo: "/assets/1736313891504.jpeg?auto=compress&cs=tinysrgb&w=100" },
     { name: "Nirvaha", logo: "/assets/nirvaha.jpg?auto=compress&cs=tinysrgb&w=100" },
     { name: "Build-Ish", logo: "/assets/bluish.jpg?auto=compress&cs=tinysrgb&w=100" },
     { name: "Kalki Labs", logo: "/assets/kalki_labs_logo.jpeg?auto=compress&cs=tinysrgb&w=100" },

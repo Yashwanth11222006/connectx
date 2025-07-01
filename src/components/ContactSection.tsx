@@ -43,7 +43,8 @@ const ContactSection = () => {
       title: "Community",
       info: "Join our WhatsApp",
       detail: "500+ active members",
-      gradient: "from-green-400 to-emerald-500"
+      gradient: "from-green-400 to-emerald-500",
+      link: "https://chat.whatsapp.com/IyYRVOMFckvAX1HJdw8Ecz"
     }
   ];
 
@@ -103,7 +104,11 @@ const ContactSection = () => {
                     </motion.div>
                     <div>
                       <h3 className="font-bold text-dark text-base sm:text-lg">{item.title}</h3>
-                      <p className="text-gray-600 font-semibold text-sm sm:text-base">{item.info}</p>
+                      {item.link ? (
+                        <a href={item.link} target="_blank" rel="noopener noreferrer" className="text-green-600 font-semibold underline text-sm sm:text-base">{item.info}</a>
+                      ) : (
+                        <p className="text-gray-600 font-semibold text-sm sm:text-base">{item.info}</p>
+                      )}
                       <p className="text-gray-500 text-xs sm:text-sm">{item.detail}</p>
                     </div>
                   </div>

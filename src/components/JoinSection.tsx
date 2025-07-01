@@ -6,7 +6,7 @@ const JoinSection = () => {
   const benefits = [
     {
       icon: Users,
-      title: "Network with 500+ Students",
+      title: "Network with 300+ Students",
       description: "Connect with ambitious peers from top universities",
       color: "text-blue-400"
     },
@@ -120,7 +120,7 @@ const JoinSection = () => {
                 Ready to Transform Your Future?
               </h3>
               <p className="text-base sm:text-lg lg:text-xl text-gray-600 mb-6 sm:mb-8 leading-relaxed">
-                Join 500+ ambitious students for a day that could change everything. 
+                Join 300+ ambitious students for a day that could change everything. 
                 Limited spots available!
               </p>
 

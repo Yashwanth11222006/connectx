@@ -56,6 +56,32 @@ const HeroSection = () => {
         />
       </div>
 
+      {/* Sponsor Logos - Desktop version (top right) */}
+      <div className="absolute top-6 right-6 z-20 hidden lg:flex flex-col items-end gap-3">
+        <h3 className="text-white text-xl font-semibold tracking-wide inline-block relative mr-4">
+          <span className="relative z-10">Powered By</span>
+          <span className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-secondary to-primary opacity-70"></span>
+        </h3>
+
+        <div className="flex items-center gap-6">
+          <div className="h-24 w-24 xl:h-28 xl:w-28 bg-white/10 backdrop-blur-md p-1 rounded-full border-2 border-white/30 flex items-center justify-center overflow-hidden">
+            <img
+              src="/assets/guide bazaar.jpg"
+              alt="Guide Bazaar Logo"
+              className="h-full w-full object-cover rounded-full"
+            />
+          </div>
+
+          <div className="h-24 w-24 xl:h-28 xl:w-28 bg-white/10 backdrop-blur-md p-1 rounded-full border-2 border-white/30 flex items-center justify-center overflow-hidden">
+            <img
+              src="/assets/sa solutions.png"
+              alt="SA Solutions Logo"
+              className="h-full w-full object-cover rounded-full"
+            />
+          </div>
+        </div>
+      </div>
+
       <div className="relative z-10 flex min-h-screen items-center">
         <div className="container mx-auto px-4 sm:px-6 py-16 sm:py-20">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
@@ -76,9 +102,9 @@ const HeroSection = () => {
                   animate={{ rotate: [0, 360] }}
                   transition={{ duration: 8, repeat: Infinity, ease: "linear" }}
                 >
-                  <Star className="w-6 h-6 sm:w-8 sm:h-8 text-yellow-300 fill-current" />
+                  <Star className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 text-yellow-300 fill-current" />
                 </motion.div>
-                <span className="text-yellow-300 font-semibold text-base sm:text-lg tracking-wide">ConnectX : Ignite Conference 2025</span>
+                <span className="text-yellow-300 font-bold text-xl sm:text-2xl md:text-3xl tracking-wide">ConnectX : Ignite Conference 2025</span>
               </motion.div>
 
               <motion.h1
@@ -245,6 +271,34 @@ const HeroSection = () => {
                     />
                   </motion.div>
                 ))}
+              </div>
+
+              {/* "Powered By" title and Sponsor Logos - Mobile version */}
+              <div className="lg:hidden mt-8 mb-2">
+                <div className="text-center mb-4">
+                  <h3 className="text-white text-xl sm:text-2xl font-semibold tracking-wide inline-block relative">
+                    <span className="relative z-10">Powered By</span>
+                    <span className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-secondary to-primary opacity-70"></span>
+                  </h3>
+                </div>
+
+                <div className="flex items-center justify-center gap-6 mb-4">
+                  <div className="h-20 w-20 sm:h-24 sm:w-24 md:h-28 md:w-28 bg-white/10 backdrop-blur-md p-1 rounded-full border-2 border-white/30 flex items-center justify-center overflow-hidden">
+                    <img
+                      src="/assets/guide bazaar.jpg"
+                      alt="Guide Bazaar Logo"
+                      className="h-full w-full object-cover rounded-full"
+                    />
+                  </div>
+
+                  <div className="h-20 w-20 sm:h-24 sm:w-24 md:h-28 md:w-28 bg-white/10 backdrop-blur-md p-1 rounded-full border-2 border-white/30 flex items-center justify-center overflow-hidden">
+                    <img
+                      src="/assets/sa solutions.png"
+                      alt="SA Solutions Logo"
+                      className="h-full w-full object-cover rounded-full"
+                    />
+                  </div>
+                </div>
               </div>
 
               {/* Glowing orbs */}

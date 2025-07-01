@@ -1,12 +1,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Heart, Twitter, Linkedin, Instagram, Mail, ExternalLink, Send } from 'lucide-react';
+import { Heart, Twitter, Linkedin, Instagram, Mail, ExternalLink, Send, MessageCircle } from 'lucide-react';
 
 const Footer = () => {
   const socialLinks = [
-    { icon: Linkedin, href: "#", label: "Connect on LinkedIn" },
-    { icon: Instagram, href: "#", label: "Follow our journey" },
-    { icon: Mail, href: "mailto:guidebazaar2@gmail.com", label: "Email us" }
+    { icon: Linkedin, href: "https://www.linkedin.com/company/guidebazaar/", label: "Connect on LinkedIn" },
+    { icon: Instagram, href: "https://www.instagram.com/nirvaha?igsh=dG83M253dnRyaDhn", label: "Follow our journey" },
+    { icon: MessageCircle, href: "https://chat.whatsapp.com/IyYRVOMFckvAX1HJdw8Ecz", label: "Join our WhatsApp Community" }
   ];
 
   // Newsletter form state and handler

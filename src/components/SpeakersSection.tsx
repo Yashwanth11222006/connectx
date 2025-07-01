@@ -81,7 +81,7 @@ const SpeakersSection = () => {
       twitter: "#",
       gradient: "from-indigo-500 via-purple-500 to-violet-500",
       accentColor: "indigo"
-    }*/
+    },*/
     {
       name: "Harshith Sai Tunuguntla",
       title: "Influencer",
@@ -100,6 +100,25 @@ const SpeakersSection = () => {
       twitter: "#",
       gradient: "from-blue-500 via-purple-500 to-pink-500",
       accentColor: "blue"
+    },
+    {
+      name: "Siv Ram Shastri Jonnalagadda",
+      title: "Business Strategist",
+      company: "Co-Founder Of Hyderabad DAO",
+      image: "/assets/1704030527479.jpeg?auto=compress&cs=tinysrgb&w=400",
+      background: "/assets/1704030527479.jpeg?auto=compress&cs=tinysrgb&w=800",
+      quote: "Success in business comes from understanding that every challenge is an opportunity in disguise. Build solutions that matter, and success will follow.",
+      achievements: [
+        { icon: Building, text: "Building Web3 Ecosystem", color: "text-indigo-400" },
+        { icon: Award, text: "TedX Speaker", color: "text-purple-400" },
+        { icon: Users, text: "Lead Organizer", color: "text-teal-400" }
+      ],
+      specialization: "Business Strategy",
+      experience: "15+ Years",
+      linkedin: "https://www.linkedin.com/in/sivramshastri/",
+      twitter: "#",
+      gradient: "from-indigo-500 via-purple-500 to-violet-500",
+      accentColor: "indigo"
     },
   ];
 
