@@ -66,25 +66,6 @@ const SpeakersSection = () => {
     {
       name: "Siv Ram Shastri Jonnalagadda",
       title: "Business Strategist",
-      company: "Enterprise Solutions",
-      image: "https://images.pexels.com/photos/3763152/pexels-photo-3763152.jpeg?auto=compress&cs=tinysrgb&w=400",
-      background: "https://images.pexels.com/photos/3861787/pexels-photo-3861787.jpeg?auto=compress&cs=tinysrgb&w=800",
-      quote: "Success in business comes from understanding that every challenge is an opportunity in disguise. Build solutions that matter, and success will follow.",
-      achievements: [
-        { icon: Building, text: "Business Strategy", color: "text-indigo-400" },
-        { icon: Award, text: "Enterprise Growth", color: "text-purple-400" },
-        { icon: Users, text: "Team Leadership", color: "text-teal-400" }
-      ],
-      specialization: "Business Strategy",
-      experience: "15+ Years",
-      linkedin: "https://www.linkedin.com/in/sivramshastri/",
-      twitter: "#",
-      gradient: "from-indigo-500 via-purple-500 to-violet-500",
-      accentColor: "indigo"
-    },*/
-    {
-      name: "Siv Ram Shastri Jonnalagadda",
-      title: "Business Strategist",
       company: "Co-Founder Of Hyderabad DAO",
       image: "/assets/1704030527479.jpeg?auto=compress&cs=tinysrgb&w=400",
       background: "/assets/1704030527479.jpeg?auto=compress&cs=tinysrgb&w=800",
@@ -100,6 +81,26 @@ const SpeakersSection = () => {
       twitter: "#",
       gradient: "from-indigo-500 via-purple-500 to-violet-500",
       accentColor: "indigo"
+    },*/
+    {
+      name: "Harshith Sai Tunuguntla",
+      title: "Influencer | Fintech Specialist",
+      company: "",
+      image: "/assets/harshith.jpeg?auto=compress&cs=tinysrgb&w=400",
+      background: "/assets/harshith.jpeg?auto=compress&cs=tinysrgb&w=800",
+      quote: "Empowering the next generation through technology, mentorship, and impactful events. Every connection is a step toward innovation.",
+      achievements: [
+        { icon: Code, text: "Fintech Backend Specialist (UPI Ecosystem)", color: "text-blue-400" },
+        { icon: Mic, text: "Public Speaker", color: "text-green-400" },
+        { icon: Users, text: "Student Mentor", color: "text-cyan-400" },
+        { icon: Award, text: "Event Organiser", color: "text-purple-400" }
+      ],
+      specialization: "Fintech, Mentorship, Events",
+      experience: "5+ Years",
+      linkedin: "https://www.linkedin.com/in/harshithsaitunuguntla/",
+      twitter: "#",
+      gradient: "from-blue-500 via-purple-500 to-pink-500",
+      accentColor: "blue"
     },
   ];
 
