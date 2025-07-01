@@ -83,25 +83,6 @@ const SpeakersSection = () => {
       accentColor: "indigo"
     },*/
     {
-      name: "Harshith Sai Tunuguntla",
-      title: "Influencer",
-      company: "",
-      image: "/assets/harshith.jpeg?auto=compress&cs=tinysrgb&w=400",
-      background: "/assets/harshith.jpeg?auto=compress&cs=tinysrgb&w=800",
-      quote: "Building secure financial systems isn't just about code-it's about trust, impact, and empowering the next generation to shape the digital economy.",
-      achievements: [
-        { icon: Code, text: "Backend Developer Specializing in Fintech Solutions, UPI Ecosystem", color: "text-blue-400" },
-        { icon: Mic, text: "Public Speaker", color: "text-cyan-400" },
-        { icon: Rocket, text: "Student Mentor", color: "text-green-400" },
-        { icon: Award, text: "Event Organiser", color: "text-purple-400" }
-      ],
-      specialization: "Tech Innovation",
-      linkedin: "https://www.linkedin.com/in/harshithtunuguntla/",
-      twitter: "#",
-      gradient: "from-blue-500 via-purple-500 to-pink-500",
-      accentColor: "blue"
-    },
-    {
       name: "Siv Ram Shastri Jonnalagadda",
       title: "Business Strategist",
       company: "Co-Founder Of Hyderabad DAO",
