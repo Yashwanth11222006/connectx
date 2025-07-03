@@ -20,15 +20,18 @@ const PartnersScrollSection = () => {
 
   const sponsorsLogos = [
     { name: "Monster", logo: "https://th.bing.com/th/id/OIP.TtGc9lwxCiyRgb1qvTrxBQHaEK?w=287&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3?auto=compress&cs=tinysrgb&w=100" },
+    { name: "SRI ABHIDA", logo: "/assets/SA.jpg?auto=compress&cs=tinysrgb&w=100" },
     { name: "Enrich", logo: "/assets/enrich.jpg?auto=compress&cs=tinysrgb&w=100" },
     { name: "Blue Icon", logo: "/assets/blue icon consultant.jpg?auto=compress&cs=tinysrgb&w=100" },
     { name: "Student Spot", logo: "/assets/studentspot.jpg?auto=compress&cs=tinysrgb&w=100" },
     { name: "NextGen Nexus", logo: "/assets/nextgen nexus.jpg?auto=compress&cs=tinysrgb&w=100" },
     { name: "paralok", logo: "/assets/paralok1.jpeg?auto=compress&cs=tinysrgb&w=100" },
     { name: "Monster", logo: "https://th.bing.com/th/id/OIP.TtGc9lwxCiyRgb1qvTrxBQHaEK?w=287&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3?auto=compress&cs=tinysrgb&w=100" },
+    { name: "SRI ABHIDA", logo: "/assets/SA.jpg?auto=compress&cs=tinysrgb&w=100" },
     { name: "Enrich", logo: "/assets/enrich.jpg?auto=compress&cs=tinysrgb&w=100" },
     { name: "Blue Icon", logo: "/assets/blue icon consultant.jpg?auto=compress&cs=tinysrgb&w=100" },
     { name: "Student Spot", logo: "/assets/studentspot.jpg?auto=compress&cs=tinysrgb&w=100" },
+     { name: "SRI ABHIDA", logo: "/assets/SA.jpg?auto=compress&cs=tinysrgb&w=100" },
     { name: "NextGen Nexus", logo: "/assets/nextgen nexus.jpg?auto=compress&cs=tinysrgb&w=100" },
     { name: "paralok", logo: "/assets/paralok1.jpeg?auto=compress&cs=tinysrgb&w=100" },
   ];

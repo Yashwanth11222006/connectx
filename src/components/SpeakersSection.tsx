@@ -6,82 +6,46 @@ const SpeakersSection = () => {
   const [hoveredSpeaker, setHoveredSpeaker] = useState<number | null>(null);
 
   const speakers = [
-    /*{
-      name: "Harshadha Chaganti",
-      title: "Tech Entrepreneur",
-      company: "Innovation Leader",
-      image: "https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?auto=compress&cs=tinysrgb&w=400",
-      background: "https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=800",
-      quote: "The future belongs to those who combine technical excellence with entrepreneurial vision. Every line of code you write today shapes tomorrow's innovations.",
+    {
+      name: "Penumarthi HariKrishna",
+      title: "Chairman-PHK Group",
+      company: "Regional Director : National Cyber Security Research Council",
+      image: "/assets/phk.jpg?auto=compress&cs=tinysrgb&w=400",
+      background: "/assets/phk.jpg?auto=compress&cs=tinysrgb&w=800",
+      quote: "Empowering the next generation through technology, mentorship, and impactful events. Every connection is a step toward innovation.",
       achievements: [
-        { icon: Code, text: "Full-Stack Innovation", color: "text-blue-400" },
-        { icon: Rocket, text: "Startup Mentor", color: "text-green-400" },
-        { icon: Award, text: "Tech Leadership", color: "text-purple-400" }
+        { icon: Code, text: " Anti Cyber Terrorism Specialist", color: "text-blue-400" },
+        { icon: Mic, text: "Serial Entrepreneur", color: "text-green-400" },
+        { icon: Users, text: "Student Mentor", color: "text-cyan-400" },
+        { icon: Award, text: "Event Organiser", color: "text-purple-400" }
       ],
-      specialization: "Tech Innovation",
-      experience: "8+ Years",
-      linkedin: "https://www.linkedin.com/in/harshadhachaganti/",
+      specialization: "Fintech, Mentorship, Events",
+      experience: "5+ Years",
+      linkedin: "https://www.linkedin.com/in/phkinfinity/",
       twitter: "#",
       gradient: "from-blue-500 via-purple-500 to-pink-500",
       accentColor: "blue"
     },
     {
-      name: "Praharsha Kanaparthi",
-      title: "Product Strategist",
-      company: "Growth Expert",
-      image: "https://images.pexels.com/photos/3777946/pexels-photo-3777946.jpeg?auto=compress&cs=tinysrgb&w=400",
-      background: "https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=800",
-      quote: "Great products aren't just built, they're crafted with deep understanding of user needs. Start with empathy, scale with data, and never stop iterating.",
+      name: "Chennapa Naidu Darapaneni",
+      title: "Founder - MeraEvents",
+      company: "Venture Partner at Factoryal",
+      image: "public/assets/CND.jpeg?auto=compress&cs=tinysrgb&w=400",
+      background: "public/assets/CND.jpeg?auto=compress&cs=tinysrgb&w=800",
+      quote: "Empowering students to innovate and excel in tech through community-driven initiatives and mentorship.",
       achievements: [
-        { icon: Lightbulb, text: "Product Innovation", color: "text-yellow-400" },
-        { icon: Users, text: "User Experience", color: "text-cyan-400" },
-        { icon: Building, text: "Scale Strategy", color: "text-emerald-400" }
+        { icon: Building, text: "Entrepreneurship", color: "text-blue-400" },
+        { icon: Code, text: "Management", color: "text-green-400" },
+        { icon: Lightbulb, text: "Strategist", color: "text-cyan-400" },
+        { icon: Rocket, text: "Startup Enthusiast", color: "text-purple-400" }
       ],
-      specialization: "Product & Growth",
-      experience: "10+ Years",
-      linkedin: "https://www.linkedin.com/in/praharsha--kanaparthi/",
+      specialization: "Leadership, Innovation, Community Building",
+      experience: "4+ Years",
+      linkedin: "https://www.linkedin.com/in/naidudc/",
       twitter: "#",
-      gradient: "from-emerald-500 via-teal-500 to-cyan-500",
-      accentColor: "emerald"
+      gradient: "from-blue-500 via-purple-500 to-pink-500",
+      accentColor: "blue"
     },
-    {
-      name: "E SAI ESHWAR",
-      title: "Technology Innovator",
-      company: "Digital Transformation",
-      image: "https://images.pexels.com/photos/3760263/pexels-photo-3760263.jpeg?auto=compress&cs=tinysrgb&w=400",
-      background: "https://images.pexels.com/photos/3825539/pexels-photo-3825539.jpeg?auto=compress&cs=tinysrgb&w=800",
-      quote: "Technology is not just about solving problems, it's about reimagining possibilities. The next breakthrough is waiting for someone brave enough to think differently.",
-      achievements: [
-        { icon: Code, text: "Digital Innovation", color: "text-orange-400" },
-        { icon: Star, text: "Tech Excellence", color: "text-red-400" },
-        { icon: Rocket, text: "Future Tech", color: "text-indigo-400" }
-      ],
-      specialization: "Digital Innovation",
-      experience: "12+ Years",
-      linkedin: "https://www.linkedin.com/in/esaieshwar/",
-      twitter: "#",
-      gradient: "from-orange-500 via-red-500 to-pink-500",
-      accentColor: "orange"
-    },
-    {
-      name: "Siv Ram Shastri Jonnalagadda",
-      title: "Business Strategist",
-      company: "Co-Founder Of Hyderabad DAO",
-      image: "/assets/1704030527479.jpeg?auto=compress&cs=tinysrgb&w=400",
-      background: "/assets/1704030527479.jpeg?auto=compress&cs=tinysrgb&w=800",
-      quote: "Success in business comes from understanding that every challenge is an opportunity in disguise. Build solutions that matter, and success will follow.",
-      achievements: [
-        { icon: Building, text: "Building Web3 Ecosystem", color: "text-indigo-400" },
-        { icon: Award, text: "TedX Speaker", color: "text-purple-400" },
-        { icon: Users, text: "Lead Organizer", color: "text-teal-400" }
-      ],
-      specialization: "Business Strategy",
-      experience: "15+ Years",
-      linkedin: "https://www.linkedin.com/in/sivramshastri/",
-      twitter: "#",
-      gradient: "from-indigo-500 via-purple-500 to-violet-500",
-      accentColor: "indigo"
-    },*/
     {
       name: "Harshith Sai Tunuguntla",
       title: "Influencer | Fintech Specialist",
