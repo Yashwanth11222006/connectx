@@ -30,8 +30,8 @@ const SpeakersSection = () => {
       name: "Chennapa Naidu Darapaneni",
       title: "Founder - MeraEvents",
       company: "Venture Partner at Factoryal",
-      image: "public/assets/CND.jpeg?auto=compress&cs=tinysrgb&w=400",
-      background: "public/assets/CND.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "/assets/CND.jpeg?auto=compress&cs=tinysrgb&w=400",
+      background: "/assets/CND.jpeg?auto=compress&cs=tinysrgb&w=800",
       quote: "Empowering students to innovate and excel in tech through community-driven initiatives and mentorship.",
       achievements: [
         { icon: Building, text: "Entrepreneurship", color: "text-blue-400" },
