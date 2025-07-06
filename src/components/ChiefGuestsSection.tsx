@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Linkedin, Twitter, ExternalLink, Crown, Award, Building, Globe, Shield, Briefcase, Star } from 'lucide-react';
+import { Linkedin, Twitter, ExternalLink, Crown, Award, Building, Globe, Shield, Briefcase, Star, Rocket, Code, Lightbulb } from 'lucide-react';
 
 const ChiefGuestsSection = () => {
   const [hoveredGuest, setHoveredGuest] = useState<number | null>(null);
@@ -18,51 +18,67 @@ const ChiefGuestsSection = () => {
         { icon: Globe, text: "Woxsen Japan Centre", color: "text-green-400" },
         { icon: Star, text: "India-Japan Business", color: "text-yellow-400" }
       ],
-      specialization: "Cross-Cultural Innovation",
-      experience: "15+ Years",
       linkedin: "https://www.linkedin.com/in/daisuke-tanji/",
       twitter: "#",
       gradient: "from-blue-500 via-indigo-500 to-purple-500",
       accentColor: "blue"
     },
-    /*{
-      name: "Chennapa Naidu Darapaneni",
-      title: "Venture Partner",
-      company: "Factoryal",
-      image: "https://images.pexels.com/photos/3763152/pexels-photo-3763152.jpeg?auto=compress&cs=tinysrgb&w=400",
-      background: "https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=800",
-      quote: "Every great startup begins with solving a real problem. As students, you have the unique perspective to identify and solve tomorrow's challenges today.",
-      achievements: [
-        { icon: Briefcase, text: "Founder, MeraEvents", color: "text-emerald-400" },
-        { icon: Award, text: "Venture Investment", color: "text-cyan-400" },
-        { icon: Building, text: "Events Transformer", color: "text-orange-400" }
-      ],
-      specialization: "Venture Capital & Events",
-      experience: "12+ Years",
-      linkedin: "https://www.linkedin.com/in/naidudc/",
-      twitter: "#",
-      gradient: "from-emerald-500 via-teal-500 to-cyan-500",
-      accentColor: "emerald"
-    },
     {
       name: "Penumarthi HariKrishna",
-      title: "Chairman",
-      company: "PHK Group",
-      image: "https://images.pexels.com/photos/3760263/pexels-photo-3760263.jpeg?auto=compress&cs=tinysrgb&w=400",
-      background: "https://images.pexels.com/photos/3825539/pexels-photo-3825539.jpeg?auto=compress&cs=tinysrgb&w=800",
-      quote: "In today's digital world, security and innovation must go hand in hand. Young entrepreneurs have the power to build a safer, more connected future.",
+      title: "Chairman-PHK Group",
+      company: "Regional Director : National Cyber Security Research Council",
+      image: "/assets/phk.jpg?auto=compress&cs=tinysrgb&w=400",
+      background: "/assets/phk.jpg?auto=compress&cs=tinysrgb&w=800",
+      quote: "Empowering the next generation through technology, mentorship, and impactful events. Every connection is a step toward innovation.",
       achievements: [
-        { icon: Shield, text: "Cyber Terrorism Expert", color: "text-red-400" },
-        { icon: Award, text: "Serial Entrepreneur", color: "text-amber-400" },
-        { icon: Building, text: "PHK Group Chairman", color: "text-indigo-400" }
+        { icon: Building, text: " Anti Cyber Terrorism Specialist", color: "text-blue-400" },
+        { icon: Globe, text: "Serial Entrepreneur", color: "text-green-400" },
+        { icon: Star, text: "Student Mentor", color: "text-cyan-400" },
+        { icon: Award, text: "Event Organiser", color: "text-purple-400" }
       ],
-      specialization: "Cybersecurity & Innovation",
-      experience: "20+ Years",
-      linkedin: "https://www.linkedin.com/in/phkinfinity/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      linkedin: "https://www.linkedin.com/in/phkinfinity/",
       twitter: "#",
-      gradient: "from-red-500 via-orange-500 to-amber-500",
-      accentColor: "red"
-    }*/
+      gradient: "from-blue-500 via-indigo-500 to-purple-500",
+      accentColor: "blue"
+    },
+    {
+      name: "Chennapa Naidu Darapaneni",
+      title: "Founder - MeraEvents",
+      company: "Venture Partner at Factoryal",
+      image: "/assets/CND.jpeg?auto=compress&cs=tinysrgb&w=400",
+      background: "/assets/CND.jpeg?auto=compress&cs=tinysrgb&w=800",
+      quote: "Empowering students to innovate and excel in tech through community-driven initiatives and mentorship.",
+      achievements: [
+        { icon: Building, text: "Entrepreneurship", color: "text-blue-400" },
+        { icon: Code, text: "Management", color: "text-green-400" },
+        { icon: Lightbulb, text: "Strategist", color: "text-cyan-400" },
+        { icon: Rocket, text: "Startup Enthusiast", color: "text-purple-400" }
+      ],
+      linkedin: "https://www.linkedin.com/in/naidudc/",
+      twitter: "#",
+      gradient: "from-blue-500 via-indigo-500 to-purple-500",
+      accentColor: "blue"
+    },
+    {
+      name: "K.V.V. Prasad",
+      title: " Inspector of Police, AP",
+      company: "",
+      image: "/assets/police.jpg?auto=compress&cs=tinysrgb&w=400",
+      background: "/assets/police.jpg?auto=compress&cs=tinysrgb&w=800",
+      quote: "Empowering students to innovate and excel in tech through community-driven initiatives and mentorship.",
+      achievements: [
+        { icon: Building, text: "specialising in NIA", color: "text-blue-400" },
+        { icon: Globe, text: "OCTOPUS Operations", color: "text-green-400" },
+        { icon: Star, text: "Cybersecurity Expert", color: "text-yellow-400" },
+        { icon: Lightbulb, text: "AI Researcher", color: "text-cyan-400" },
+      ],
+      // specialization: "Cross-Cultural Innovation",
+      // experience: "15+ Years",
+      linkedin: "https://www.linkedin.com/in/naidudc/",
+      twitter: "#",
+      gradient: "from-blue-500 via-indigo-500 to-purple-500",
+      accentColor: "blue"
+    }
   ];
 
   return (
@@ -202,18 +218,7 @@ const ChiefGuestsSection = () => {
                       {guest.company}
                     </p>
 
-                    {/* Experience & Specialization */}
-                    <div className="flex justify-center gap-3 mb-3">
-                      <div className="text-center">
-                        <p className="text-xs text-gray-400 uppercase tracking-wide">Experience</p>
-                        <p className="text-white font-bold text-sm">{guest.experience}</p>
-                      </div>
-                      <div className="w-px bg-gray-600"></div>
-                      <div className="text-center">
-                        <p className="text-xs text-gray-400 uppercase tracking-wide">Focus</p>
-                        <p className="text-white font-bold text-xs">{guest.specialization}</p>
-                      </div>
-                    </div>
+                    {/* Experience & Specialization removed as per request */}
                   </div>
 
                   {/* Achievements Section */}
