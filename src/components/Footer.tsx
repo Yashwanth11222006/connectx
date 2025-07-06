@@ -5,7 +5,7 @@ import { Heart, Twitter, Linkedin, Instagram, Mail, ExternalLink, Send, MessageC
 const Footer = () => {
   const socialLinks = [
     { icon: Linkedin, href: "https://www.linkedin.com/company/guidebazaar/", label: "Connect on LinkedIn" },
-    { icon: Instagram, href: "https://www.instagram.com/nirvaha?igsh=dG83M253dnRyaDhn", label: "Follow our journey" },
+    { icon: Instagram, href: "https://www.instagram.com/guide.bazaar?igsh=d3RuemhmaGszcXk2", label: "Follow our journey" },
     { icon: MessageCircle, href: "https://chat.whatsapp.com/IyYRVOMFckvAX1HJdw8Ecz", label: "Join our WhatsApp Community" }
   ];
 
