@@ -7,46 +7,6 @@ const SpeakersSection = () => {
 
   const speakers = [
     {
-      name: "Penumarthi HariKrishna",
-      title: "Chairman-PHK Group",
-      company: "Regional Director : National Cyber Security Research Council",
-      image: "/assets/phk.jpg?auto=compress&cs=tinysrgb&w=400",
-      background: "/assets/phk.jpg?auto=compress&cs=tinysrgb&w=800",
-      quote: "Empowering the next generation through technology, mentorship, and impactful events. Every connection is a step toward innovation.",
-      achievements: [
-        { icon: Code, text: " Anti Cyber Terrorism Specialist", color: "text-blue-400" },
-        { icon: Mic, text: "Serial Entrepreneur", color: "text-green-400" },
-        { icon: Users, text: "Student Mentor", color: "text-cyan-400" },
-        { icon: Award, text: "Event Organiser", color: "text-purple-400" }
-      ],
-      specialization: "Fintech, Mentorship, Events",
-      experience: "5+ Years",
-      linkedin: "https://www.linkedin.com/in/phkinfinity/",
-      twitter: "#",
-      gradient: "from-blue-500 via-purple-500 to-pink-500",
-      accentColor: "blue"
-    },
-    {
-      name: "Chennapa Naidu Darapaneni",
-      title: "Founder - MeraEvents",
-      company: "Venture Partner at Factoryal",
-      image: "/assets/CND.jpeg?auto=compress&cs=tinysrgb&w=400",
-      background: "/assets/CND.jpeg?auto=compress&cs=tinysrgb&w=800",
-      quote: "Empowering students to innovate and excel in tech through community-driven initiatives and mentorship.",
-      achievements: [
-        { icon: Building, text: "Entrepreneurship", color: "text-blue-400" },
-        { icon: Code, text: "Management", color: "text-green-400" },
-        { icon: Lightbulb, text: "Strategist", color: "text-cyan-400" },
-        { icon: Rocket, text: "Startup Enthusiast", color: "text-purple-400" }
-      ],
-      specialization: "Leadership, Innovation, Community Building",
-      experience: "4+ Years",
-      linkedin: "https://www.linkedin.com/in/naidudc/",
-      twitter: "#",
-      gradient: "from-blue-500 via-purple-500 to-pink-500",
-      accentColor: "blue"
-    },
-    {
       name: "Harshith Sai Tunuguntla",
       title: "Influencer | Fintech Specialist",
       company: "",
@@ -58,6 +18,44 @@ const SpeakersSection = () => {
         { icon: Mic, text: "Public Speaker", color: "text-green-400" },
         { icon: Users, text: "Student Mentor", color: "text-cyan-400" },
         { icon: Award, text: "Event Organiser", color: "text-purple-400" }
+      ],
+      specialization: "Fintech, Mentorship, Events",
+      experience: "5+ Years",
+      linkedin: "https://www.linkedin.com/in/harshithsaitunuguntla/",
+      twitter: "#",
+      gradient: "from-blue-500 via-purple-500 to-pink-500",
+      accentColor: "blue"
+    },
+    {
+      name: "Nikeelu Gunda",
+      title: "Founder & CEO of Digital Connect",
+      company: "",
+      image: "/assets/GUNDA.jpeg?auto=compress&cs=tinysrgb&w=400",
+      background: "/assets/GUNDA.jpeg?auto=compress&cs=tinysrgb&w=800",
+      quote: "Empowering the next generation through technology, mentorship, and impactful events. Every connection is a step toward innovation.",
+      achievements: [
+         { icon: Mic, text: "Bussiness Development", color: "text-green-400" },
+        { icon: Users, text: "Growth Marketing", color: "text-cyan-400" },
+        { icon: Award, text: "Digital Marketing", color: "text-purple-400" }
+      ],
+      specialization: "Fintech, Mentorship, Events",
+      experience: "5+ Years",
+      linkedin: "https://www.linkedin.com/in/harshithsaitunuguntla/",
+      twitter: "#",
+      gradient: "from-blue-500 via-purple-500 to-pink-500",
+      accentColor: "blue"
+    },
+    {
+      name: "Praharsha Kanaparthi",
+      title: "Speaker at Microsoft & UiPath DevCon 2024",
+      company: "",
+      image: "/assets/praharsha.jpg?auto=compress&cs=tinysrgb&w=400",
+      background: "/assets/praharsha.jpg?auto=compress&cs=tinysrgb&w=800",
+      quote: "Empowering the next generation through technology, mentorship, and impactful events. Every connection is a step toward innovation.",
+      achievements: [
+         { icon: Mic, text: "AI Researcher", color: "text-green-400" },
+        { icon: Users, text: "Emerging Tech Expert", color: "text-cyan-400" },
+        { icon: Award, text: "Automation Specialist", color: "text-purple-400" }
       ],
       specialization: "Fintech, Mentorship, Events",
       experience: "5+ Years",

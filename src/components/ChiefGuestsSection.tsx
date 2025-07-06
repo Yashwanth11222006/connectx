@@ -63,8 +63,8 @@ const ChiefGuestsSection = () => {
       name: "K.V.V. Prasad",
       title: " Inspector of Police, AP",
       company: "",
-      image: "/assets/police.jpg?auto=compress&cs=tinysrgb&w=400",
-      background: "/assets/police.jpg?auto=compress&cs=tinysrgb&w=800",
+      image: "/assets/police123.jpg?auto=compress&cs=tinysrgb&w=400",
+      background: "/assets/police123.jpg?auto=compress&cs=tinysrgb&w=800",
       quote: "Empowering students to innovate and excel in tech through community-driven initiatives and mentorship.",
       achievements: [
         { icon: Building, text: "specialising in NIA", color: "text-blue-400" },
